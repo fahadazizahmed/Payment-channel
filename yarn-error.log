@@ -1,0 +1,152 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Program Files (x86)\Yarn\bin\yarn.js add web3@1.0.0-beta.26
+
+PATH: 
+  C:\ProgramData\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Skype\Phone\;C:\ProgramData\chocolatey\bin;C:\Program Files\Git\cmd;C:\Program Files\Geth;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\110\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files\Microsoft SQL Server\120\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\120\Tools\Binn\ManagementStudio\;C:\Program Files (x86)\Microsoft SQL Server\120\DTS\Binn\;C:\Program Files (x86)\dotnet\;C:\Program Files\nodejs\;C:\Program Files (x86)\Yarn\bin\;C:\Users\Fahad Aziz\AppData\Local\Programs\Python\Python36-32\Scripts\;C:\Users\Fahad Aziz\AppData\Local\Programs\Python\Python36-32\;C:\Python27;C:\Python27\python.exe;C:\Python27\Scripts\; C:\Python27\Lib\site-packages\django\bin;C:\Users\Fahad Aziz\AppData\Local\Microsoft\WindowsApps;C:\Users\Fahad Aziz\AppData\Roaming\npm;C:\Program Files\Microsoft VS Code\bin;C:\Users\Fahad Aziz\AppData\Local\Yarn\bin;C:\Users\Fahad Aziz\AppData\Local\atom\bin
+
+Yarn version: 
+  1.5.1
+
+Node version: 
+  8.10.0
+
+Platform: 
+  win32 x64
+
+npm manifest: 
+  {
+    "name": "inbox",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+      "solc": "^0.4.21"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
+
+Trace: 
+  Error: E:\Nodejsapp\inbox\node_modules\scrypt: Command failed.
+  Exit code: 1
+  Command: C:\WINDOWS\system32\cmd.exe
+  Arguments: /d /s /c node-gyp rebuild
+  Directory: E:\Nodejsapp\inbox\node_modules\scrypt
+  Output:
+  E:\Nodejsapp\inbox\node_modules\scrypt>if not defined npm_config_node_gyp (node "C:\Program Files\nodejs\node_modules\npm\bin\node-gyp-bin\\..\..\node_modules\node-gyp\bin\node-gyp.js" rebuild )  else (node "" rebuild ) 
+  gyp info it worked if it ends with ok
+  gyp info using node-gyp@3.6.2
+  gyp info using node@8.10.0 | win32 | x64
+  gyp info spawn C:\Users\Fahad Aziz\.windows-build-tools\python27\python.exe
+  gyp info spawn args [ 'C:\\Program Files\\nodejs\\node_modules\\npm\\node_modules\\node-gyp\\gyp\\gyp_main.py',
+  gyp info spawn args   'binding.gyp',
+  gyp info spawn args   '-f',
+  gyp info spawn args   'msvs',
+  gyp info spawn args   '-G',
+  gyp info spawn args   'msvs_version=auto',
+  gyp info spawn args   '-I',
+  gyp info spawn args   'E:\\Nodejsapp\\inbox\\node_modules\\scrypt\\build\\config.gypi',
+  gyp info spawn args   '-I',
+  gyp info spawn args   'C:\\Program Files\\nodejs\\node_modules\\npm\\node_modules\\node-gyp\\addon.gypi',
+  gyp info spawn args   '-I',
+  gyp info spawn args   'C:\\Users\\Fahad Aziz\\.node-gyp\\8.10.0\\include\\node\\common.gypi',
+  gyp info spawn args   '-Dlibrary=shared_library',
+  gyp info spawn args   '-Dvisibility=default',
+  gyp info spawn args   '-Dnode_root_dir=C:\\Users\\Fahad Aziz\\.node-gyp\\8.10.0',
+  gyp info spawn args   '-Dnode_gyp_dir=C:\\Program Files\\nodejs\\node_modules\\npm\\node_modules\\node-gyp',
+  gyp info spawn args   '-Dnode_lib_file=C:\\Users\\Fahad Aziz\\.node-gyp\\8.10.0\\<(target_arch)\\node.lib',
+  gyp info spawn args   '-Dmodule_root_dir=E:\\Nodejsapp\\inbox\\node_modules\\scrypt',
+  gyp info spawn args   '-Dnode_engine=v8',
+  gyp info spawn args   '--depth=.',
+  gyp info spawn args   '--no-parallel',
+  gyp info spawn args   '--generator-output',
+  gyp info spawn args   'E:\\Nodejsapp\\inbox\\node_modules\\scrypt\\build',
+  gyp info spawn args   '-Goutput_dir=.' ]
+  Warning: Missing input files:
+  E:\Nodejsapp\inbox\node_modules\scrypt\build\..\scrypt\win\include\config.h
+  gyp info spawn C:\Program Files (x86)\MSBuild\14.0\bin\msbuild.exe
+  gyp info spawn args [ 'build/binding.sln',
+  gyp info spawn args   '/clp:Verbosity=minimal',
+  gyp info spawn args   '/nologo',
+  gyp info spawn args   '/p:Configuration=Release;Platform=x64' ]
+  Building the projects in this solution one at a time. To enable parallel build, please add the "/m" switch.
+    Copying scrypt/win/include/config.h to scrypt/scrypt-1.2.0/config.h
+    The system cannot find the file specified.
+    win_delay_load_hook.cc
+    Generating code
+    Finished generating code
+    copied_files.vcxproj -> E:\Nodejsapp\inbox\node_modules\scrypt\build\Release\\copied_files.node
+    copied_files.vcxproj -> E:\Nodejsapp\inbox\node_modules\scrypt\build\Release\copied_files.pdb (Full PDB)
+    memlimit.c
+    keyderivation.c
+    pickparams.c
+    hash.c
+    win_delay_load_hook.cc
+    scrypt_wrapper.vcxproj -> E:\Nodejsapp\inbox\node_modules\scrypt\build\Release\\scrypt_wrapper.lib
+    crypto_scrypt.c
+    crypto_scrypt_smix.c
+    warnp.c
+    sha256.c
+    insecure_memzero.c
+    scryptenc_cpuperf.c
+    mman.c
+    gettimeofday.c
+    win_delay_load_hook.cc
+    scrypt_lib.vcxproj -> E:\Nodejsapp\inbox\node_modules\scrypt\build\Release\\scrypt_lib.lib
+    scrypt_common.cc
+    scrypt_params_async.cc
+    scrypt_params_sync.cc
+    scrypt_kdf_async.cc
+  e:\nodejsapp\inbox\node_modules\scrypt\src\node-boilerplate\inc\scrypt_async.h(53): warning C4996: 'Nan::Callback::Call': was declared deprecated (compiling source file ..\src\node-boilerplate\scrypt_params_async.cc) [E:\Nodejsapp\inbox\node_modules\scrypt\build\scrypt.vcxproj]
+    E:\Nodejsapp\inbox\node_modules\nan\nan.h(1618): note: see declaration of 'Nan::Callback::Call' (compiling source file ..\src\node-boilerplate\scrypt_params_async.cc)
+  ..\src\node-boilerplate\scrypt_params_async.cc(32): warning C4996: 'Nan::Callback::Call': was declared deprecated [E:\Nodejsapp\inbox\node_modules\scrypt\build\scrypt.vcxproj]
+    E:\Nodejsapp\inbox\node_modules\nan\nan.h(1618): note: see declaration of 'Nan::Callback::Call'
+  e:\nodejsapp\inbox\node_modules\scrypt\src\node-boilerplate\inc\scrypt_async.h(53): warning C4996: 'Nan::Callback::Call': was declared deprecated (compiling source file ..\src\node-boilerplate\scrypt_kdf_async.cc) [E:\Nodejsapp\inbox\node_modules\scrypt\build\scrypt.vcxproj]
+    E:\Nodejsapp\inbox\node_modules\nan\nan.h(1618): note: see declaration of 'Nan::Callback::Call' (compiling source file ..\src\node-boilerplate\scrypt_kdf_async.cc)
+  ..\src\node-boilerplate\scrypt_kdf_async.cc(28): warning C4996: 'Nan::Callback::Call': was declared deprecated [E:\Nodejsapp\inbox\node_modules\scrypt\build\scrypt.vcxproj]
+    E:\Nodejsapp\inbox\node_modules\nan\nan.h(1618): note: see declaration of 'Nan::Callback::Call'
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\xstring(2112): fatal error C1060: compiler is out of heap space (compiling source file ..\src\node-boilerplate\scrypt_params_async.cc) [E:\Nodejsapp\inbox\node_modules\scrypt\build\scrypt.vcxproj]
+    scrypt_kdf_sync.cc
+    scrypt_kdf-verify_sync.cc
+    scrypt_kdf-verify_async.cc
+    scrypt_hash_sync.cc
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\algorithm(1358): fatal error C1060: compiler is out of heap space (compiling source file ..\src\node-boilerplate\scrypt_kdf-verify_sync.cc) [E:\Nodejsapp\inbox\node_modules\scrypt\build\scrypt.vcxproj]
+    scrypt_hash_async.cc
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\xstring(1667): fatal error C1060: compiler is out of heap space (compiling source file ..\src\node-boilerplate\scrypt_kdf-verify_async.cc) [E:\Nodejsapp\inbox\node_modules\scrypt\build\scrypt.vcxproj]
+    Internal Compiler Error in C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\amd64\CL.exe.  You will be prompted to send an error report to Microsoft later.
+    INTERNAL COMPILER ERROR in 'C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\amd64\CL.exe'
+        Please choose the Technical Support command on the Visual C++
+        Help menu, or open the Technical Support help file for more information
+  e:\nodejsapp\inbox\node_modules\scrypt\src\node-boilerplate\inc\scrypt_async.h(53): warning C4996: 'Nan::Callback::Call': was declared deprecated (compiling source file ..\src\node-boilerplate\scrypt_hash_async.cc) [E:\Nodejsapp\inbox\node_modules\scrypt\build\scrypt.vcxproj]
+    E:\Nodejsapp\inbox\node_modules\nan\nan.h(1618): note: see declaration of 'Nan::Callback::Call' (compiling source file ..\src\node-boilerplate\scrypt_hash_async.cc)
+  ..\src\node-boilerplate\scrypt_hash_async.cc(52): warning C4996: 'Nan::Callback::Call': was declared deprecated [E:\Nodejsapp\inbox\node_modules\scrypt\build\scrypt.vcxproj]
+    E:\Nodejsapp\inbox\node_modules\nan\nan.h(1618): note: see declaration of 'Nan::Callback::Call'
+  cl : Command line error D8040: error creating or communicating with child process [E:\Nodejsapp\inbox\node_modules\scrypt\build\scrypt.vcxproj]
+  gyp ERR! build error 
+  gyp ERR! stack Error: `C:\Program Files (x86)\MSBuild\14.0\bin\msbuild.exe` failed with exit code: 1
+  gyp ERR! stack     at ChildProcess.onExit (C:\Program Files\nodejs\node_modules\npm\node_modules\node-gyp\lib\build.js:258:23)
+  gyp ERR! stack     at emitTwo (events.js:126:13)
+  gyp ERR! stack     at ChildProcess.emit (events.js:214:7)
+  gyp ERR! stack     at Process.ChildProcess._handle.onexit (internal/child_process.js:198:12)
+  gyp ERR! System Windows_NT 10.0.16299
+  gyp ERR! command "C:\\Program Files\\nodejs\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\node_modules\\node-gyp\\bin\\node-gyp.js" "rebuild"
+  gyp ERR! cwd E:\Nodejsapp\inbox\node_modules\scrypt
+  gyp ERR! node -v v8.10.0
+  gyp ERR! node-gyp -v v3.6.2
+  gyp ERR! not ok
+      at ProcessTermError.MessageError (C:\Program Files (x86)\Yarn\lib\cli.js:186:110)
+      at new ProcessTermError (C:\Program Files (x86)\Yarn\lib\cli.js:226:113)
+      at ChildProcess.<anonymous> (C:\Program Files (x86)\Yarn\lib\cli.js:30281:17)
+      at emitTwo (events.js:126:13)
+      at ChildProcess.emit (events.js:214:7)
+      at maybeClose (internal/child_process.js:925:16)
+      at Process.ChildProcess._handle.onexit (internal/child_process.js:209:5)
